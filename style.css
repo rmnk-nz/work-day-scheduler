@@ -33,6 +33,9 @@ textarea {
   color: #6d1717;
   margin-top: 30px;
 }
+.container {
+  padding-bottom: 5rem;
+}
 .description {
   white-space: pre-wrap;
 }
