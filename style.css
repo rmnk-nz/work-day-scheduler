@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   line-height: 1;
-  background-image: linear-gradient(rgb(255, 245, 200)30%,rgb(245, 196, 156));
+  background-image: linear-gradient(rgb(139, 115, 115)30%,rgb(224, 181, 148));
 }
 
 textarea {
@@ -9,20 +9,21 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border-top: 4px solid #e2bf4b;
+  /* border-left: 1px solid black; */
   padding: 10px;
 }
 
 .jumbotron {
   text-align: center;
-  background-image: linear-gradient(rgb(243, 211, 186), rgb(255, 245, 200) 30%);
+  background-image: linear-gradient(rgb(224, 181, 148), rgb(139, 115, 115)40%);
   color: black;
   border-radius: 0;
   padding-bottom: 10px;
 }
 .display-3 {
   font-family: 'Rock Salt', cursive;
-  color: #6d1717;
+  color: #e2bf4b;
 }
 .lead {
   font-size: 1.5rem;
@@ -30,7 +31,7 @@ textarea {
 }
 #currentDay {
   font-size: 2rem;
-  color: #6d1717;
+  color: #e2bf4b;
   margin-top: 30px;
 }
 .container {
@@ -48,13 +49,16 @@ textarea {
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  padding-bottom: 5px;
+  /* border-top: 1px solid #e2bf4b; */
 }
 
 .hour {
   background-color:whitesmoke;
   color: #f38983;;
-  border-top: 1px dashed #000000;
+  border-radius: 50%;
+  /* border-bottom-right-radius: 15px; */
+  /* border-top: 1px dashed #000000; */
 }
 
 .past {
@@ -73,10 +77,10 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border: 1px solid white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #93dcec;
+  background-color: #95b1b8;
   color: white;
 }
 
