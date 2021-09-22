@@ -9,7 +9,6 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-top: 4px solid #e2bf4b;
   padding: 10px;
 }
 
@@ -34,7 +33,10 @@ textarea {
   margin-top: 30px;
 }
 .container {
-  padding-bottom: 5rem;
+  background-color: whitesmoke;
+  margin-bottom: 5rem;
+  padding: 0 20px 0 20px;
+  border-radius: 15px;
 }
 .description {
   white-space: pre-wrap;
@@ -43,37 +45,42 @@ textarea {
 .time-block {
   text-align: center;
   border-radius: 15px;
+  border: solid 3px whitesmoke;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  padding-bottom: 5px;
+  
 }
 
 .hour {
-  background-color:whitesmoke;
-  color: #f38983;;
+  text-align: center;
+  background: whitesmoke;
+  color: #f38983;
+  font-weight: bold;
   border-radius: 50%;
+  border: solid #f38983;
+  margin-top: 3px;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: rgb(139, 115, 115);
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #f38983;
   color: white;
 }
 
 .future {
-  background-color: #afecaf;
+  background-color: rgb(224, 181, 148);
   color: white;
 }
 
 .saveBtn {
-  border: 1px solid white;
+  border: 3px solid whitesmoke;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #95b1b8;
@@ -83,4 +90,14 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.clearSchedule {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: whitesmoke;
+  color:#ff6961;
+  border-radius: 15px;
+  border: solid 5px #ff6961;
+  font-weight: bold;
 }
