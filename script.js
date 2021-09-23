@@ -4,17 +4,23 @@ $("#currentDay").text(today.format("ddd, MMM Do YYYY"));
 
 //click save button to save user input to the local data
 $(".saveBtn").on("click", function () { 
-    confirm("Save to Schedule?");
+    var userChoice = confirm("Save to Schedule?");
+
+    if (userChoice === true) {
     //indicates to user they have clicked saved
     $(this).addClass("savedColor");
     //gets user input in selected time bracket
     var userInput = $(this).siblings(".time-block").val();
     //gets the id of which hour the user input info
     var userHour =  $(this).parent().attr("id");
-    
     //save to local storage
     localStorage.setItem(userHour, userInput);
-
+    }
+    // alrets user they did not save changes
+    else {
+        alert("Not Saved to Schedule");
+        return;
+    }
 });
 
 //function to show user the current hour by applying custom css
@@ -62,8 +68,15 @@ $("#17hour .time-block").val(localStorage.getItem("17hour"));
 
 //on click function to clear all saved user input in schedule
 $(".clearSchedule").on("click", function () { 
-    confirm("Are you sure you want to clear your schedule?");
+    var userClear = confirm("Are you sure you want to clear your Schedule?");
+    if (userClear === true) {
     //clear local data storage and refresh page
     localStorage.clear();
-    window.location.replace("./index.html")
+    window.location.replace("./index.html");
+    }
+    //alrets user they cancled clearing schedule
+    else {
+        alert("Cancled Clearing Schedule");
+        return;
+    }
 });
